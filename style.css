@@ -39,6 +39,12 @@ body{
     left: unset;
     right: 15px;
 }
+.card_heart:hover, .card_cart:hover{
+    transform: scale(1.2);
+}
+.card_heart:active, .card_cart:active{
+    color: red;
+}
 
 .card_img{
     width: 50%;
@@ -58,12 +64,22 @@ body{
     font-weight: bold;
     text-align: center;
     transition: 0.5s;
-
 }
 
 .card_title{
     padding-top: 15px;
     color: var(--primary-color);
+}
+
+.card:hover .card_img{
+    transform: translateY(-70px) rotate(-20deg);
+}
+.card:hover .card_title{
+    transform: translate(-55px, -65px);
+
+}
+.card:hover .card_price{
+    transform: translate(-110px, -65px);
 }
 
 .card_size, .card_color{
@@ -114,15 +130,23 @@ body{
     margin: 0 3%;
     margin-left: 0px;
 }
-.card:hover .card_img{
-    transform: translateY(-70px) rotate(-20deg);
+.card_action button:hover{
+    transform: scale(1.1);
 }
-.card:hover .card_title{
-    transform: translate(-55px, -65px);
-
+.card_action button:active{
+    background-color: brown;
 }
-.card:hover .card_price{
-    transform: translate(-110px, -65px);
+.card_color span:hover{
+    transform: scale(1.2);
+}
+.card_color span:active{
+    border: 2px solid white;
+}
+.card_size span:hover{
+    transform: scale(1.2);
+}
+.card_size span:active{
+    background: white;
 }
 
 .card_size{
